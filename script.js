@@ -19,7 +19,7 @@ async function checkweather(cityname) {
     console.log(data);
     if(data.message=='city not found'){
         weath.innerHTML = "";
-        document.getElementById("city").innerHTML = weath.innerHTML = "<img src='' alt=''>";;
+        document.getElementById("city").innerHTML = weath.innerHTML = "<img src='' alt=''>";
         document.getElementById("temp").innerHTML =  "&#8451;";
         document.getElementById("numh").innerHTML =  "%";
         document.getElementById("numw").innerHTML =  "KM/H";
