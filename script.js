@@ -23,6 +23,8 @@ async function checkweather(cityname) {
         document.getElementById("temp").innerHTML ="";
         document.getElementById("numh").innerHTML ="";
         document.getElementById("numw").innerHTML ="";
+        windspeed.innerHTML="";
+        humidity.innerHTML="";
     }    
     else{
         document.getElementById("city").innerHTML = data.name;
