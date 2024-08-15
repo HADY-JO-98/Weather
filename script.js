@@ -19,10 +19,10 @@ async function checkweather(cityname) {
     console.log(data);
     if(data.message=='city not found'){
         weath.innerHTML = "";
-        document.getElementById("city").innerHTML = weath.innerHTML = "<img src='' alt=''>";
-        document.getElementById("temp").innerHTML =  "&#8451;";
-        document.getElementById("numh").innerHTML =  "%";
-        document.getElementById("numw").innerHTML =  "KM/H";
+        document.getElementById("city").innerHTML =;
+        document.getElementById("temp").innerHTML =;
+        document.getElementById("numh").innerHTML =;
+        document.getElementById("numw").innerHTML =;
     }    
     else{
         document.getElementById("city").innerHTML = data.name;
