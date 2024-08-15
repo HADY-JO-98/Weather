@@ -21,6 +21,7 @@ async function checkweather(cityname) {
         cont.style.display="none";
     }    
     else{
+        cont.style.display="block";
         document.getElementById("city").innerHTML = data.name;
         document.getElementById("temp").innerHTML = Math.floor(data.main.temp) + "&#8451;";
         document.getElementById("numh").innerHTML = data.main.humidity + "%";
@@ -41,7 +42,6 @@ async function checkweather(cityname) {
         } else {
             weath.innerHTML = "<img src='images/partcloud.png' alt='Partly Cloudy'>";
         }
-        cont.style.display="block";
     }
 }
 sbtn.addEventListener("click", () => {
