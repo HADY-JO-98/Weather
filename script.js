@@ -18,13 +18,7 @@ async function checkweather(cityname) {
     var data = await response.json();
     console.log(data);
     if(data.message=='city not found'){
-        weath.innerHTML = "";
-        document.getElementById("city").innerHTML ="";
-        document.getElementById("temp").innerHTML ="";
-        document.getElementById("numh").innerHTML ="";
-        document.getElementById("numw").innerHTML ="";
-        windspeed.innerHTML="";
-        humidity.innerHTML="";
+        cont.style.display="none";
     }    
     else{
         document.getElementById("city").innerHTML = data.name;
